@@ -120,3 +120,11 @@ function initPage() {
 
 }
 initPage();
+
+
+renderSearchHistory();
+if (searchHistory.length > 0) {
+    getWeather(searchHistory[searchHistory.length -1]);
+}
+
+console.log(historyEl);
